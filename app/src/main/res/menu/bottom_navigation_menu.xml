@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="dashboardFragment"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:title="Dashboard"/>
+
+    <item
+        android:id="notificationFragment"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="Notification"/>
+    <item
+        android:id="kitkatFragment"
+        android:icon="@drawable/ic_baseline_bubble_chart_24"
+        android:title="KitKat"/>
+</menu>

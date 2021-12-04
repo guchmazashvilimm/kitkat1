@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.fragments.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        tools:layout="@layout/fragment_dashboard"
+        android:name="com.example.myapplication.fragments.DashboardFragment"
+        android:label="DashboardFragment" >
+        <argument android:name="amount"
+            android:defaultValue="-1"
+            app:argType="integer"/>
+    </fragment>
+    <fragment
+        android:id="@+id/kitkatFragment"
+        tools:layout="@layout/fragment_kitkat"
+        android:name="com.example.myapplication.fragments.KitKatFragment"
+        android:label="KitKatFragment" />
+    <navigation android:id="@+id/navigation"
+        app:startDestination="@id/notificationFragment">
+        <fragment
+            android:id="@+id/notificationFragment"
+                android:name="com.example.myapplication.fragments.Notificatication"
+nt"
+            android:label="NotifionFragme        tools:layout="@layout/fragment_notificationFragment" />
+    </navigation>
+</navigation>
